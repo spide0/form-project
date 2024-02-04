@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Complaint Form</title>
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+    <h1>Bus Safety Violation Form</h1>
+    <form>
+            
+            <h2>Name:</h2>
+            <input type="text" placeholder=" First">
+            <input type="text" placeholder=" Last">
+            <h2>Phone:</h2>
+            <input type="number" placeholder=" ### ### ###">
+            <h2>Date of event:</h2>
+            <input  type="date" >
+
+            <h2>Time of event:</h2>
+            <input type="time"> 
+            <h2>Bus number:</h2>
+            <input type=" number">
+            <h2>Your Address:</h2>
+            <input type="text" placeholder=" Street Address">
+            <input type="text" placeholder=" City">
+            <br>
+            <br>
+            <input type="text" placeholder=" Postal/Zip Code">
+            <h2>Description and location of unsafe event:</h2>
+            <input id="area" type="textarea">
+            <h2>Results of Investigation and Action Taken:
+            </h2>
+            <input id="result" type="textarea">
+            <h2>Prior complaints or discipline action against driver:
+            </h2>
+            <input id="p-complaint" type="textarea">
+
+            <h2>Verification:</h2>
+
+            <div class="g-recaptcha" 
+
+            data-sitekey="6LdYmmIpAAAAAI_6gCkWQbAk55cVvbuPDhRBEivL">
+            </div>
+        
+            <br>
+            <br>
+
+            <button>SEND</button>
+
+        </form>
+    
+</body>
+</html>
